@@ -1,0 +1,12 @@
+{
+  "name": "mmm-traccar",
+  "version": "1.0.0",
+  "description": "A MagicMirror module for tracking moving objects through Traccar.org APIs.",
+  "main": "MMM-TracCar.js",
+  "author": "Asim Siddiqui",
+  "license": "MIT",
+  "dependencies": {
+    "request": "2.85.0",
+    "ws": "5.1.1"
+  } 
+}
