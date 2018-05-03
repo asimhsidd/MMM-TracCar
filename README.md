@@ -19,9 +19,7 @@ A [MagicMirror²](https://github.com/MichMich/MagicMirror/) module for tracking 
 				url: "", // Traccar Server URL (free server @ http://demo5.traccar.org )
 				username: "", // Traccar Account username (email) (btw, there is a free account option too!) :)
 				pass: "", // Traccar Account Password
-				gmapid: "", // Google Apps key
-				lat: "25.204849", // default latitude (Not Optional)
-				lon: "55.270783" // default longitude (Not Optional)
+				gmapid: "" // Google Apps key
 			}
         }
     ]
@@ -35,6 +33,4 @@ A [MagicMirror²](https://github.com/MichMich/MagicMirror/) module for tracking 
 | `url`  	| *Required* Your url of the Traccar.org server. <br>
 | `username`   	| *Required* Your username(email) of the Traccar.org server. <br>
 | `pass`   	| *Required* Your password of the Traccar.org server. <br>
-| `gmapid`   		| *Required* Your google key. <br>
-| `lat`   		| *Optional* Latitude of the default location. <br>
-| `lon`   	| *Optional* Longitude of the default location. <br>
+| `gmapid`   	| *Required* Your google key. <br>
