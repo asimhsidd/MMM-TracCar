@@ -1,7 +1,7 @@
 # MMM-TracCar
 A [MagicMirror²](https://github.com/MichMich/MagicMirror/) module for tracking moving objects through [Traccar.org](http://www.traccar.org) on a map. A single map (default size: 300x400, but can be changed easily) is built inside the module, no iframe is used. The best position is bottom left, although it depends upon the user. The map has nice rounded and shadow borders which adds a nice aesthetic sense to the overall MM. 
 
-This module is based upon Traccar.org so you must have their server running (you may use their free servers too, if you are  okay with your location saved on their server). For the maps, this module uses Google Maps API. It takes Traccar.org login credentials, Google Maps API key as configuration input.
+This module is based upon Traccar.org so you must have their server running (you may use their free servers too, if you are  okay with your location saved on their server). For the maps, this module uses Google Maps API. It takes Traccar.org login credentials, server url and Google Maps API key as configuration input.
 
 Upon load, the model initiates contact with the Traccar.org server using HTTP Request. Once contact is successful, it extracts information regarding all the devices that are listed on the server for constant location updates. Then the module formulate a socket connection with the Traccar.org server to receive real-time location updates as and when they are received from the respective devices. Each device is then shown on the map as an individual marker (green for online, red for offline devices) with the respective device name in the popup above each marker. These markers are moved on the map as location updates are received i.e. when a respective device is moving.
 
