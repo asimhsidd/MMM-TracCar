@@ -1,5 +1,5 @@
 /* Magic Mirror Module: MMM-TracCar
- * v1.0.1 - June 2016
+ * v1.0.1 - May 2018
  *
  * By Asim Siddiqui <asimhsidd@gmail.com>
  * MIT License
@@ -7,6 +7,10 @@
 
 Module.register("MMM-TracCar",{
 defaults: {
+		map_width: 300,
+		map_height: 400,
+		map_border_radius: 10,
+		map_shadow_color: "white",
 		mapSTYLE: // from https://snazzymaps.com
 			[
 				{
@@ -58,10 +62,6 @@ defaults: {
 			]			
 	},
 
-getStyles: function() {
-		return ['MMM-TracCar.css'];
-	},
-
 start: function () {
 		self = this;
 		self.loaded = false;
@@ -85,14 +85,11 @@ getDom: function() {
 			return wrapper;
 		}
 		// map div creation
-		self.mapDim = {
-			height: 400,
-			width: 300
-		};
 		var mapElement = document.createElement("div");
 		self.mapId = self.identifier + "_gmap";
 		mapElement.id = self.mapId;
-		mapElement.classList.add("map-canvas");
+		var style = "width:"+self.config.map_width+"px; height:"+self.config.map_height+"px; -webkit-border-radius:"+self.config.map_border_radius+"px; -moz-border-radius:"+self.config.map_border_radius+"px; border-radius:"+self.config.map_border_radius+"px; -webkit-box-shadow:0px 0px 117px -6px "+self.config.map_shadow_color+"; -moz-box-shadow:0px 0px 117px -6px "+self.config.map_shadow_color+"; box-shadow:0px 0px 117px -6px "+self.config.map_shadow_color+";";
+		mapElement.style = style;
 		wrapper.appendChild(mapElement);
 		return wrapper;
 },
