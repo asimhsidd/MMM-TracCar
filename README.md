@@ -1,5 +1,5 @@
 # MMM-TracCar
-A [MagicMirror²](https://github.com/MichMich/MagicMirror/) module for tracking moving objects through [Traccar.org](http://www.traccar.org) on a map. A single map (default size: 300x400, but can be changed easily) is built inside the module, no iframe is used. The best position is bottom left, although it depends upon the user. The map has nice rounded and shadow borders which adds a nice aesthetic sense to the overall MM. 
+A [MagicMirror²](https://github.com/MichMich/MagicMirror/) module for tracking moving objects through [Traccar.org](http://www.traccar.org) on a map. A single map (default size: 300x400, can be changed through config settings) is built inside the module, no iframe is used. The best position is bottom left, although it depends upon the user. The map may have nice rounded and shadow borders which adds a nice aesthetic sense to the overall MM. All these settings are adjustable through config settings.
 
 This module is based upon Traccar.org so you must have their server running (you may use their free servers too, if you are  okay with your location saved on their server). For the maps, this module uses Google Maps API. It takes Traccar.org login credentials, server url and Google Maps API key as configuration input.
 
@@ -25,7 +25,11 @@ The module is built with error handling procedures where it attempts to reconnec
 				url: "", // Traccar Server URL (free server @ http://demo5.traccar.org )
 				username: "", // Traccar Account username (email) (btw, there is a free account option too!) :)
 				pass: "", // Traccar Account Password
-				gmapid: "" // Google Apps key
+				gmapid: "", // Google Apps key
+				map_width: "300", // width of the map element
+				map_height: "400", // height of the map element
+				map_border_radius: "10", // border radius of the map element (optional)
+				map_shadow_color: "POWDERBLUE", // shadow color of the border element (optional)
 			}
         }
     ]
@@ -40,3 +44,7 @@ The module is built with error handling procedures where it attempts to reconnec
 | `username`   	| *Required* Your username(email) of the Traccar.org server. <br>
 | `pass`   	| *Required* Your password of the Traccar.org server. <br>
 | `gmapid`   	| *Required* Your google key. <br>
+| `map_width`   	| *Required* Width of the map element. <br>
+| `map_height`   	| *Required* Height of the map element. <br>
+| `map_border_radius`   	| *Optional* Border radius of the map element. <br>
+| `map_shadow_color`   	| *Optional* Shadow color of the border element. <br>
