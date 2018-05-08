@@ -37,14 +37,14 @@ The module is built with error handling procedures where it attempts to reconnec
 
 ## Configuration options for MMM-TracCar
 
-| Option    	| Description
-|---------------|-----------
-| `position`	| *Required* The position of the screencast window. <br>**Options:** `['bottomRight', 'bottomCenter', 'bottomLeft', 'center',  'topRight', 'topCenter', 'topLeft']` <br>**Type:** `string` <br>**Note:** This module config actual sets the location, not the magic mirror position config.
-| `url`  	| *Required* Your url of the Traccar.org server. <br>
-| `username`   	| *Required* Your username(email) of the Traccar.org server. <br>
-| `pass`   	| *Required* Your password of the Traccar.org server. <br>
-| `gmapid`   	| *Required* Your google key. <br>
-| `map_width`   	| *Required* Width of the map element. <br>
-| `map_height`   	| *Required* Height of the map element. <br>
-| `map_border_radius`   	| *Optional* Border radius of the map element. <br>
-| `map_shadow_color`   	| *Optional* Shadow color of the border element. <br>
+| Option    	| Required? | Description |
+|:------------- |:--------- |:----------- |
+| `position`	| :red_circle: | The position of the screencast window. <br>**Options:** `['bottomRight', 'bottomCenter', 'bottomLeft', 'center',  'topRight', 'topCenter', 'topLeft']` <br>**Type:** `string` <br>**Note:** This module config actual sets the location, not the magic mirror position config. |
+| `url`  	| :red_circle: | The URL of the [Traccar Server](https://www.traccar.org/demo-server/) |
+| `username`   	| :red_circle: | Your Traccar Username (email) |
+| `pass`   	| :red_circle: | Your Traccar Password |
+| `gmapid`   	| :red_circle: | Your Google API key |
+| `map_width`   	| :red_circle: | The Width of the map element |
+| `map_height`   	| :red_circle: | The Height of the map element |
+| `map_border_radius`   | :white_circle: | The Border radius of the map element |
+| `map_shadow_color`   	| :white_circle: | The Shadow color of the border element |
