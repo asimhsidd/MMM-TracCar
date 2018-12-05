@@ -29,6 +29,7 @@ The module is built with error handling procedures where it attempts to reconnec
 				map_width: "300", // width of the map element
 				map_height: "400", // height of the map element
 				map_border_radius: "10", // border radius of the map element (optional)
+				map_zoom: "15", // zoom level of the map (optional)
 				map_shadow_color: "POWDERBLUE", // shadow color of the border element (optional)
 			}
         }
@@ -47,4 +48,5 @@ The module is built with error handling procedures where it attempts to reconnec
 | `map_width`   	| :red_circle: | The Width of the map element |
 | `map_height`   	| :red_circle: | The Height of the map element |
 | `map_border_radius`   | :white_circle: | The Border radius of the map element |
+| `map_zoom`   | :white_circle: | The Zoom level of the map element |
 | `map_shadow_color`   	| :white_circle: | The Shadow color of the border element |
