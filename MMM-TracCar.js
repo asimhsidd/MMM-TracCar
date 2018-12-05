@@ -8,6 +8,7 @@
 Module.register("MMM-TracCar",{
 defaults: {
 		map_width: 300,
+		map_zoom: 15,
 		map_height: 400,
 		map_border_radius: 10,
 		map_shadow_color: "white",
@@ -124,7 +125,7 @@ socketNotificationReceived: function(notification, payload){
 						self.map  = new google.maps.Map(
 								document.getElementById(self.mapId),
 								{
-									zoom:15,
+									zoom: self.config.map_zoom,
 									styles: self.config.mapSTYLE
 								}
 						);
